@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование & Deploy моделей</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Anime YOLOv8 Detection</h1>
+        <p class="subtitle">Полностью оптимизированный инференс</p>
+        
+        <div class="controls">
+            <input type="file" id="uploadInput" accept="image/jpeg, image/png, image/webp" />
+            <label for="uploadInput" class="upload-btn">Загрузить изображение</label>
+            <span id="status">Модель загружается...</span>
+        </div>
+
+        <div class="canvas-wrapper">
+            <canvas id="outputCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
