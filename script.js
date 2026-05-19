@@ -1,4 +1,4 @@
-const MODEL_PATH = './best.onnx';
+const MODEL_PATH = './inf/cmcm.onnx';
 const MODEL_SIZE = 640; // Стандартный размер входа YOLOv8
 const CONFIDENCE_THRESHOLD = 0.25;
 const IOU_THRESHOLD = 0.45;
